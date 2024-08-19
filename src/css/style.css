@@ -1,0 +1,1512 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 244px;
+}
+
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+button,
+ul,
+input,
+select,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  list-style: none;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1216px;
+}
+
+/* Header */
+
+header {
+  border-bottom: 1px #eff5fb solid;
+  padding: 14px 0px;
+}
+
+header a {
+  color: #333333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__desctopMenu {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__desctopMenu-containerList {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.nav__desctopMenu-containerList-item-link {
+  display: flex;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 114%;
+  letter-spacing: 0.25px;
+}
+
+.nav__desctopMenu-containerList-item-link img {
+  margin-left: 8px;
+}
+
+.nav__container-btn__btn {
+  padding: 14px 20px;
+  border-radius: 4px;
+  background: #e3f5f5;
+  color: #03b2a5;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav__mobileMenu {
+  display: none;
+}
+
+/* Header */
+/* Main */
+
+.main__breadCrumbs-p {
+  padding: 16px 0px 0px 6px;
+  display: flex;
+  color: rgba(51, 51, 51, 0.7);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.main__breadCrumbs-container-p img {
+  margin: 0px 8px 0px 4px;
+}
+
+.main__titlePage {
+  padding: 30px 0px 0px;
+}
+
+.main__titlePage-h1 {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.main__filter {
+  margin-top: 32px;
+}
+
+.main__filter-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__filter-container-criterion {
+  border-radius: 24px;
+  border: 1px solid #c1c5cd;
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.main__filter-container-criterion:not(:last-child) {
+  margin-right: 8px;
+}
+
+.main__filter-container-criterion img {
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+.main__filter-container--selected-criterion {
+  border: 2px solid #16c8bb;
+}
+
+.main__containerArticles {
+  margin-top: 15px;
+  position: relative;
+}
+
+.main__containerArticles::before {
+  content: "";
+  position: absolute;
+  top: 117px;
+  background-image: url(../images/articleBg.svg) no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-position: top;
+}
+
+.main__containerArticles-article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main__containerArticles-articleContainer {
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 32%;
+  background-color: #fff;
+  margin-bottom: 23px;
+  border: 1px #dedede solid;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__containerArticles-articleContainer:nth-child(1),
+.main__containerArticles-articleContainer:nth-child(2) {
+  min-height: 240px;
+  max-width: 48.4%;
+}
+
+.main__containerArticles-article-container {
+  margin: 8px 8px;
+  position: absolute;
+  z-index: 1;
+}
+
+.main__containerArticles-article-container--criterion {
+  display: inline-flex;
+  border: 1px solid #c1c5cd;
+  background: rgba(255, 255, 255, 0.7);
+  flex-wrap: wrap;
+}
+
+.main__containerArticles-article-img {
+  position: relative;
+}
+
+.main__containerArticles-article-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.main__containerArticles-article-info {
+  flex-grow: 1;
+  padding: 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__containerArticles-articleContainer:nth-child(1)
+  .main__containerArticles-article-info,
+.main__containerArticles-articleContainer:nth-child(2)
+  .main__containerArticles-article-info {
+  min-height: 240px;
+}
+
+.main__containerArticles-article-info-containerTitle h3 {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main__containerArticles-article-info-containerAuthor p {
+  color: #494949;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  margin-top: 4px;
+}
+
+.containerCriterion {
+  display: none;
+}
+
+.main__containerArticles-article-info-containerBody p {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 8px;
+}
+
+.main__containerArticles-article-info-containerDateCreate {
+  margin-top: auto;
+}
+
+.main__containerArticles-article-info-containerDateCreate p {
+  color: #868686;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.main__containerArticles-btn {
+  margin-top: 56px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn__action {
+  border-radius: 4px;
+}
+
+/* Main */
+/* Article */
+
+.main__articleContent {
+  margin-top: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__articleContent-container {
+  width: 70%;
+}
+
+.main__articleContent-container-header-containerTitle-h1 {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.main__articleContent-container-header-containerAuthor {
+  margin-top: 16px;
+  display: flex;
+  gap: 0 8px;
+}
+
+.main__articleContent-container-header-containerAuthor-author,
+.main__articleContent-container-header-containerAuthor-publicationDate {
+  color: #494949;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.main__articleContent-container-header-containerAuthor-uiElemDot {
+  color: #494949;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.main__articleContent-container-header-containerImg {
+  margin-top: 24px;
+  width: 100%;
+  height: 331px;
+}
+
+.main__articleContent-container-header-containerImg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main__articleContent-container-header-containerSummary {
+  margin: 24px 0px 0px 1px;
+}
+
+.main__articleContent-h4 {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main__articleContent-container-header-containerSummary-list {
+  margin-top: 16px;
+}
+
+.main__articleContent-container-header-containerSummary-list li img {
+  margin-right: 8px;
+}
+
+.main__articleContent-container-header-containerSummary-list-item:not(
+    :last-child
+  ) {
+  margin-bottom: 8px;
+}
+
+.main__articleContent-container-header-containerSummary-list-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.main__articleContent-container-header-containerSummary-list-item,
+.main__articleContent-container-header-containerSummary-list-item-nestedList-item {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.main__articleContent-container-header-containerSummary-list-item-nestedList1 {
+  margin-left: 56px;
+  margin-top: 4px;
+}
+
+.main__articleContent-container-header-containerSummary-list-item-nestedList {
+  margin-top: 4px;
+  margin-left: 16px;
+}
+
+.main__articleContent-container-subtitle {
+  margin-top: 24px;
+}
+
+.main__articleContent-h3 {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.main__articleContent-container-subtitle-containerBody {
+  padding: 16px 0 26px;
+}
+
+.main__articleContent-p {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.main__articleContent-container-subtitle1 p:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.main__articleContent-container-subtitle-containerQuote {
+  margin-top: 9px;
+  padding: 34px 24px 24px;
+  border-radius: 16px;
+  background: #f3f7fe;
+}
+
+.main__articleContent-quote1 {
+  background-image: url(../images/quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 24px 24px;
+}
+
+.main__articleContent {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main__articleContent-container-subtitle-containerQuote-body {
+  margin-bottom: 8px;
+}
+
+.main__articleContent-container-subtitle2 li {
+  display: flex;
+  align-items: start;
+}
+
+.main__articleContent-container-subtitle2 li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.main__articleContent-container-subtitle2-containerImg {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle2-containerImg-img {
+  margin-top: 24px;
+  width: 100%;
+  height: 331px;
+}
+
+.main__articleContent-container-subtitle2-containerImg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main__articleContent-container-subtitle2-containerImg-alt {
+  margin-top: 16px;
+  color: #868686;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+}
+
+.main__articleContent-container-subtitle3 {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle4 {
+  margin-top: 24px;
+  padding: 24px 104px 48px 102px;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.main__articleContent-container-subtitle4-contanerQuote-p {
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main__articleContent-container-subtitle5 {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle5-body {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__articleContent-container-subtitle5-body-containerImg {
+  width: 40%;
+  height: 380px;
+  margin-right: 24px;
+}
+
+.main__articleContent-container-subtitle5-body-containerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main__articleContent-container-subtitle5-body-containerText {
+  width: 55%;
+}
+
+.main__articleContent-container-subtitle5-footer {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle6-containerQuote {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #fefaec;
+}
+
+.main__articleContent-container-subtitle-containerQuote-titleH4 {
+  margin-bottom: 8px;
+}
+
+.main__articleContent-container-subtitle6 {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__articleContent-container-subtitle6-containerImg {
+  width: 40%;
+  height: 174px;
+  margin-right: 24px;
+}
+
+.main__articleContent-container-subtitle6-containerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.main__articleContent-container-subtitle6-containerText {
+  width: 55%;
+}
+
+.main__articleContent-container-subtitle7 {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle8 {
+  margin-top: 24px;
+  border-radius: 16px;
+  background: #fff3eb;
+  padding: 24px;
+}
+
+.main__articleContent-container-subtitle9 {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__articleContent-container-subtitle9-container1 {
+  margin-right: 12px;
+}
+
+.main__articleContent-container-subtitle9-container2 {
+  margin-left: 12px;
+}
+
+.main__articleContent-container-subtitle9-container-containerImg {
+  width: 100%;
+  height: 235px;
+}
+
+.main__articleContent-container-subtitle9-container-containerImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.main__articleContent-container-subtitle9-container-containerText {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle10 {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle10-containerImg {
+  text-align: center;
+}
+
+.main__articleContent-container-subtitle10-containerText {
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle10-containerQuote {
+  margin-top: 24px;
+  border-radius: 16px;
+  background: rgba(3, 178, 165, 0.1);
+  padding: 24px;
+}
+
+.main__articleContent-container-subtitle10-containerCriterions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.main__articleContent-container-subtitle10-containerCriterion {
+  color: #2963a3;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.main__articleContent-container-subtitle10-containerUiElemDot {
+  color: #2963a3;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  margin: 0 8px;
+}
+
+.main__containerArticles-btn--btn {
+  padding: 12px 88.5px;
+  background-color: #35b3a9;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main__articleContent-containerOther {
+  width: 20%;
+}
+
+.main__article {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main__article::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/Vector\(1\).svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main__articleContent-makeAnAppointment {
+  border-radius: 16px;
+  background-color: #e6f0fd;
+  padding: 24px 12.5px;
+}
+
+.main__articleContent-makeAnAppointment-containerImg {
+  width: 100%;
+}
+
+.main__articleContent-makeAnAppointment-containerImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.main__articleContent-makeAnAppointment-containerBody {
+  margin: 24px 11.5px 0px;
+  text-align: center;
+}
+
+.main__articleContent-makeAnAppointment-containerBody-title {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main__articleContent-makeAnAppointment-containerBody-p {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 11px;
+}
+
+.main__articleContent-containerBtn {
+  margin: 24px 11.5px 0px;
+}
+
+.main__articleContent-containerBtn-button {
+  background-color: #35b3a9;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  width: 100%;
+  padding: 12px 16px;
+}
+
+.main__articleContent-aboutThePsychologist {
+  margin-top: 23px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  position: relative;
+}
+
+.main__articleContent-aboutThePsychologist-ways {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.main__articleContent-aboutThePsychologist-ways-container:not(:first-child) {
+  margin-top: 8px;
+}
+
+.main__articleContent-aboutThePsychologist-ways-container {
+  border-radius: 6px;
+  background: rgba(243, 244, 248, 0.7);
+  display: flex;
+  align-items: center;
+  padding: 0px 6px;
+  width: fit-content;
+}
+
+.main__articleContent-aboutThePsychologist-ways-container-wayIcon {
+  margin-right: 4px;
+}
+
+.main__articleContent-aboutThePsychologist-ways-container-wayP {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.main__articleContent-aboutThePsychologist-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerPhoto {
+  width: 120px;
+  height: 120px;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerPhoto img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerInfo {
+  margin-top: 16px;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerNameH3 {
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerProfession {
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerExperienceAndAge {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.main__articleContent-aboutThePsychologist-about-experience,
+.main__articleContent-aboutThePsychologist-about-age {
+  color: #a2a7b1;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.main__articleContent-aboutThePsychologist-about-containerExperienceAndAge img {
+  margin: 0 8px;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith {
+  margin: 16px 0px 0px;
+  padding: 16px 0px 0px;
+  border-top: 1px solid #dedede;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith-titleH3 {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith-list {
+  margin-top: 8px;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith-list-item {
+  display: flex;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith-list-item:not(
+    :first-child
+  ) {
+  margin-top: 8px;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith-list-item img {
+  margin-right: 4px;
+}
+
+.main__articleContent-aboutThePsychologist-worksWith-list-item p {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.main__articleContent-bannerGiveCare {
+  background-image: url(../images/Group.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 292px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 29px;
+  padding: 60px 24px 0px;
+  box-sizing: border-box;
+}
+
+.main__articleContent-bannerGiveCare p {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.main__articleContent-buyAPlan {
+  background-image: url(../images/Group\ \(1\).png);
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: right bottom;
+  margin-top: 42px;
+  padding: 32px;
+  box-sizing: border-box;
+  border: 1px solid #dedede;
+  box-shadow: 0px 30px 50px 0px #eff5fb;
+}
+
+.main__articleContent-buyAPlan-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.main__articleContent-buyAPlan-title-number {
+  color: #2963a3;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-right: 4px;
+}
+
+.main__articleContent-buyAPlan-title-p {
+  color: #2963a3;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.main__articleContent-buyAPlan-bodyP {
+  margin-top: 16px;
+  color: #011632;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.main__articleContent-buyAPlan-priceH3 {
+  margin-top: 16px;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.main__articleContent-buyAPlan-btn {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: #35b3a9;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.main__SelectionOfASpecialist {
+  margin-top: 48px;
+  padding-bottom: 107px;
+  border-top: 1px solid #dedede;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__container {
+  position: relative;
+  display: flex;
+  background-image: url(../images/Vector\(3\).svg) no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.main__container::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Vector@2x.svg) no-repeat;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+.main__SelectionOfASpecialist-text {
+  margin-top: 72px;
+  width: 30%;
+}
+
+.main__SelectionOfASpecialist-text-titleH3 {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.main__SelectionOfASpecialist-text-bodyP {
+  margin-top: 24px;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.main__SelectionOfASpecialist-text-btn {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background-color: #16c8bb;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main__SelectionOfASpecialist-img {
+  margin: 72px 29px 0 0;
+}
+
+.main__SelectionOfASpecialist-img img {
+  display: block;
+}
+/* Article */
+/* Footer */
+
+footer {
+  background: #2963a3;
+  padding-top: 40px;
+}
+
+.footer a:hover {
+  border-bottom: 1px white solid;
+  box-sizing: border-box;
+}
+
+.footer__mainСontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__mainСontent-siteMap {
+  display: flex;
+}
+
+.footer__mainСontent-siteMap-containerLinks:not(:last-child) {
+  margin-right: 93px;
+}
+
+.footer__mainСontent-siteMap-containerLinks-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__mainСontent-siteMap-containerLinks-list li a {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer__mainСontent-subscription {
+  max-width: 486px;
+}
+
+.footer__mainСontent-subscription-title-p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.footer__mainСontent-subscription-containerForm-form-container {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(157, 157, 157, 0.2);
+  margin: 8px 0px;
+}
+
+.footer__mainСontent-subscription-containerForm-form-container-input {
+  margin-left: 16px;
+  color: #9d9d9d;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+}
+
+.footer__mainСontent-subscription-containerForm-form-container-btn {
+  display: inline-flex;
+  height: 48px;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-color: #16c8bb;
+  margin: -1px;
+}
+
+.footer__mainСontent-subscription-offer-p,
+.footer__mainСontent-subscription-offer-p a {
+  color: rgb(255 255 255 / 70%);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+}
+
+.footer__mainСontent-externalLinks-developedWithin {
+  margin-bottom: 40px;
+}
+
+.footer__mainСontent-externalLinks-container-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__mainСontent-externalLinks-container-list li:not(:last-child) {
+  margin-right: 16px;
+}
+
+.footer__mainСontent-externalLinks-container-list li a:hover {
+  border: none;
+}
+
+.footer__mainСontent-externalLinks-container-list-itemVK a,
+.footer__mainСontent-externalLinks-container-list-itemTelegram a,
+.footer__mainСontent-externalLinks-container-list-itemTwitter a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  background: #eff5fb;
+}
+
+.footer__other {
+  margin-top: 24px;
+  padding: 16px 0px 17px;
+  border-top: 1px rgba(157, 157, 157, 0.3) solid;
+}
+
+.footer__other-container {
+  display: flex;
+}
+
+.footer__other-container p {
+  margin-right: 48px;
+}
+
+.footer__other-container p,
+.footer__other-container p a {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Media Querys */
+/* base */
+@media (max-width: 1250px) {
+  .content {
+    width: 94%;
+  }
+  .main__containerArticles::before {
+    display: none;
+  }
+
+  .footer__mainСontent-siteMap-containerLinks:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .footer__mainСontent-subscription {
+    width: 44%;
+  }
+}
+
+/* iPad Pro 12.9" - 3 */
+@media (max-width: 1024px) {
+  .nav__desctopMenu {
+    width: 93%;
+  }
+
+  .nav__desctopMenu-containerList {
+    width: 72%;
+  }
+
+  .main__containerArticles-btn {
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+
+  .containerCriterion {
+    display: flex;
+  }
+
+  .containerCriterion p:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .main__article::before,
+  .main__container,
+  .main__articleContent-container-subtitle10-containerCriterions {
+    display: none;
+  }
+
+  .main__article {
+    margin-bottom: 71px;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav__desctopMenu {
+    display: none;
+  }
+
+  .nav__mobileMenu {
+    display: block;
+  }
+
+  .footer__mainСontent-subscription {
+    width: 60%;
+  }
+
+  .footer__mainСontent-externalLinks,
+  .footer__other {
+    margin-top: 26px;
+  }
+
+  .main__articleContent-container {
+    width: 100%;
+  }
+
+  .main__articleContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__articleContent-containerOther {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 23px;
+  }
+
+  .main__articleContent-containerOther-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main__articleContent-containerOther-container:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  .main__articleContent-makeAnAppointment,
+  .main__articleContent-aboutThePsychologist,
+  .main__articleContent-bannerGiveCare,
+  .main__articleContent-buyAPlan {
+    width: 48%;
+    box-sizing: border-box;
+  }
+
+  .main__articleContent-aboutThePsychologist,
+  .main__articleContent-bannerGiveCare,
+  .main__articleContent-buyAPlan {
+    margin-top: 0;
+  }
+}
+
+/* iPad mini - 4 */
+@media (max-width: 768px) {
+  .main__containerArticles-articleContainer:nth-child(1),
+  .main__containerArticles-articleContainer:nth-child(2) {
+    max-width: 100%;
+  }
+
+  .main__containerArticles-articleContainer {
+    max-width: 48%;
+  }
+
+  .main__containerArticles-btn {
+    margin-top: 33px;
+    margin-bottom: 55px;
+  }
+}
+
+/* iPhone 11 Pro Max - 4 */
+@media (max-width: 653px) {
+  .main__filter-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .footer__mainСontent-subscription {
+    margin-top: 23px;
+  }
+
+  .main__article {
+    margin-bottom: 127px;
+  }
+
+  .main__containerArticles-articleContainer {
+    display: none;
+    min-width: 100%;
+  }
+
+  .main__containerArticles-articleContainer:nth-child(1),
+  .main__containerArticles-articleContainer:nth-child(2),
+  .main__containerArticles-articleContainer:nth-child(3),
+  .main__containerArticles-articleContainer:nth-child(4) {
+    display: block;
+  }
+
+  .main__containerArticles-btn {
+    margin-top: 28px;
+    margin-bottom: 59px;
+  }
+
+  .footer__mainСontent-siteMap {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer__mainСontent-subscription {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .footer__other-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer__other-container p {
+    margin-bottom: 13px;
+  }
+
+  .main__articleContent-containerOther-container {
+    flex-direction: column;
+  }
+
+  .main__articleContent-containerOther {
+    margin-top: 56px;
+  }
+
+  .main__articleContent-makeAnAppointment,
+  .main__articleContent-aboutThePsychologist,
+  .main__articleContent-bannerGiveCare,
+  .main__articleContent-buyAPlan {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .main__articleContent-makeAnAppointment,
+  .main__articleContent-aboutThePsychologist,
+  .main__articleContent-bannerGiveCare {
+    margin-bottom: 24px;
+  }
+
+  .main__articleContent-container-subtitle5-body,
+  .main__articleContent-container-subtitle9,
+  .main__articleContent-container-subtitle6 {
+    flex-direction: column;
+  }
+
+  .main__articleContent-container-subtitle5-body-containerImg,
+  .main__articleContent-container-subtitle5-body-containerText,
+  .main__articleContent-container-subtitle6-containerImg,
+  .main__articleContent-container-subtitle6-containerText {
+    width: 100%;
+  }
+
+  .main__articleContent-container-subtitle5-body-containerImg img,
+  .main__articleContent-container-subtitle6-containerImg img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .main__articleContent-container-subtitle6-containerImg {
+    height: 207px;
+  }
+
+  .main__articleContent-container-subtitle5-body-containerText,
+  .main__articleContent-container-subtitle9-container-containerText,
+  .main__articleContent-container-subtitle-194-containerText {
+    margin-top: 16px;
+  }
+
+  .main__articleContent-container-subtitle9-container1 {
+    margin-right: 0px;
+  }
+
+  .main__articleContent-container-subtitle9-container2 {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .main__articleContent-containerOther-container {
+    width: 100%;
+  }
+}
+
+/* iPhone SE - 3 */
+@media (max-width: 392px) {
+  .main__articleContent-containerOther {
+    margin-top: 16px;
+  }
+
+  .main__article {
+    margin-bottom: 60px;
+  }
+
+  .main__articleContent-container-subtitle6-containerImg {
+    height: 160px;
+  }
+
+  .main__articleContent-container-subtitle-94-containerText {
+    margin-top: 16px;
+  }
+}
+/* Media Querys */
